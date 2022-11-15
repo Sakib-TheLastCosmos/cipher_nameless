@@ -1,0 +1,73 @@
+:root {
+    --background-black: #121212;
+    --container-black-weak: #202020;
+    --light-grey-dark: #c5c5c5;
+    --container-white: #ecf0f1;
+    --navy-blue-deep: #0a2c49;
+    --container-black-weak-hover: #242424;
+}
+
+
+.full_cont {
+    background: rgba(0, 0, 0, 0.671);
+}
+
+.container {
+    background: var(--background-black);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.596);
+}
+
+.container header ul {
+    background: var(--container-black-weak);
+}
+
+.container header ul li svg {
+    fill: var(--light-grey-dark);
+}
+
+.container header {
+    color: var(--container-white);
+}
+
+.container header h4 {
+    color: var(--light-grey);
+}
+
+textarea {
+    background: var(--container-black-weak);
+    border: 1px solid var(--background-black) !important;
+    color: var(--light-grey);
+    font-weight: 100 !important;
+}
+
+.container main textarea:hover,
+.container main textarea:focus {
+    background: var(--container-black-weak-hover);
+    border: 0.5px solid var(--navy-blue-deep) !important;
+    transition: .1s ease-in-out;
+}
+
+.copy__input {
+    color: var(--light-grey-dark);
+}
+
+a {
+    color: var(--paste-blue);
+}
+
+#mode {
+    background: var(--container-black-weak-hover);
+}
+
+#mode svg {
+    fill: var(--container-white) !important;
+}
+
+#clear svg {
+    fill: var(--container-white);
+}
+
+footer a {
+    font-weight: 100;
+}
+

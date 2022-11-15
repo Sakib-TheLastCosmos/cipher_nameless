@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    outline: none;
+    font-family: "Roboto";
+}
+
+:root {
+    --yellow: rgb(243, 177, 34);
+    --light-grey: #ecf0f1;
+    --dark-grey: #424242;
+    --background-white: #F7F7F7;
+    --navy-blue: #0C4271;
+    --paste-blue: #61F2F5;
+    --pink:#f65158;
+}
+
+body {
+    background: url(./images/1012765.jpg);
+    background-size: cover;
+}
+
+li {
+    list-style-type: none;
+}
+
+svg {
+    width: 25px;
+    height: 25px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.full_cont {
+    height: 100vh;
+    /* background: rgb(0, 0, 0);
+    opacity: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 60%;
+    max-width: 800px;
+    min-width: 700px;
+    height: 70%;
+    max-height: 1100px;
+    min-height: 700px;
+    background: var(--background-white);
+    border-radius: 18px;
+    box-shadow: 0 2px 7px rgb(23, 24, 110);
+    padding: 0 40px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container header {
+    width: 80%;
+}
+
+.container header ul {
+    width: min-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 6px 25px;
+    background-color: var(--light-grey);
+    border-radius: 0 0 12px 12px;
+}
+
+.container header ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.container header ul li:hover,
+.container header ul .active {
+    background: var(--navy-blue);
+    transition: .1s ease-in-out;
+}
+
+.container header ul li:hover svg,
+.container header ul .active svg {
+    fill: var(--paste-blue);
+    transition: .1s ease-in-out;
+}
+
+.container header ul li svg {
+    fill: var(--dark-grey);
+}
+
+.name {
+    width: 100%;
+}
+
+.name h2 {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.name h4 {
+    float: left;
+    font-size: 1.3rem;
+    font-weight: 200;
+} 
+
+.container header .name {
+    text-align: center;
+    margin: 20px 0 7.5px 0;
+}
+
+.container main {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container main .top,
+.container main .bottom {
+    height: 42.5%;
+}
+
+.container main textarea {
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 6px;
+    border: 0.5px solid #b9b9b9;
+    resize: none;
+    /* font-weight: 400; */
+}
+
+.container main textarea:hover,
+.container main textarea:focus {
+    border: 0.5px solid var(--navy-blue);
+}
+
+.container main .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container main .middle p {
+    font-size: 1.1rem;
+}
+
+#enter__btn {
+    /* background: var(--navy-blue); */
+    background: var(--navy-blue);
+    color: var(--paste-blue);
+    color: #fff;
+    padding: 7px 25px;
+    font-family: "Roboto";
+    font-weight: 300;
+    border: 1px solid var(--navy-blue);
+    border-radius: 15px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    float: right;
+}
+
+.container main .middle button#enter__btn:hover {
+    color: var(--paste-blue);
+    /* padding: 7px 30px; */
+    letter-spacing: 2px;
+    transition: .2s ease-in-out;
+}
+
+.container footer {
+    margin-top: 25px;
+}
+
+
+.copy__input {
+    font-size: 1.1rem;
+}
+
+.copy__input input {
+    margin-right: 3px;
+}
+
+#clear svg {
+    fill: black;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 1.5px;
+}
+
+#clear {
+    color: var(--pink);
+    border: none;
+    float: none;
+    margin-right: 10px;
+    right: 10px;
+    background: none;
+}
+
+#clear svg:hover {
+    fill: var(--pink);
+    transition: .1s ease-in-out;
+}
+
+
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    width: 80%;
+}
+
+footer a:nth-child(1) {
+    float: left;
+}
+
+footer a:nth-child(2) {
+    float: right;
+}
+
+
+#mode {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    box-shadow: 0 1spx 5px var(--light-grey);
+    float: right;
+}
+
+#mode svg {
+    width: 25px;
+    height: 25px;
+}
+
+#mode svg.light {
+    fill: black;
+}
+
+.name .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    color: var(--navy-blue);
+}
+
+
+.watermark {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: var(--background-white);
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .container {
+        width: 90%;
+        height: 95%;
+        max-width: 100%;
+        min-width: 100%;    
+        max-height: 95%;
+        min-height: 95%;  
+        padding: 0 20px 20px 20px;  
+        border-radius: 0 0 18px 18px;
+    }
+
+    .container main {
+        width: 92.5%;
+        height: 80%;
+    }
+
+    .container header,
+    footer {
+        width: 90%;
+    }
+
+    .full_cont {
+        height: 100vh;
+        /* background: rgb(0, 0, 0);
+        opacity: 50%; */
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .copy__input {
+        font-size: 0.9rem;
+    }
+
+    #clear svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    #clear {
+        margin-right: 5px;
+    }
+
+    #enter__btn {
+        padding: 5px 15px;
+        border-radius: 12px;
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+
+    .name h2 {
+        font-size: 1.5rem;
+    }
+
+    .name h4 {
+        font-size: 1.15rem;
+    }
+
+    #mode {
+        width: 40px;
+        height: 40px;
+    }
+
+    .container main textarea {
+        font-size: 1rem;
+    }
+}

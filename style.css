@@ -66,6 +66,7 @@ button {
 
 .container header {
     width: 80%;
+    text-transform: capitalize;
 }
 
 .container header ul {
